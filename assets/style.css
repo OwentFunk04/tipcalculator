@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.header {
+    text-align: center;
+    padding: 10px;
+    font-size: 100px;
+    width: 100vw;
+    background-color: rebeccapurple;
+}
+#totalBill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100vw;
+    background-color: mediumblue;
+}
+#totalBill::after {
+    content: "$";
+    position: relative;
+    right: 1em;
+
+}
+#numberOfPeople {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100vw;
+    background-color: chocolate;
+}
+p {
+    text-align: center;
+    width: 100vw;
+    font-size: 30px;
+    background-color: turquoise;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100vw;
+    background-color: turquoise;
+
+}
+.rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    user-select: none;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    font-size: 75px;
+  }
+  
+  .rating input:checked ~ label {
+    color: gold;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    background-color: steelblue;
+    border: none;
+}
+.button:hover {
+    background-color: slateblue;
+}  

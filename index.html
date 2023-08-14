@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tip Calculator</title>
+        <link href="./assets/style.css" type="text/css" rel="stylesheet"></link>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Tip Calculator</h1>
+        </div>
+        
+        <div class="totalBill" id="totalBill">
+            <label>
+                <input id="bill" type="number" placeholder="Total Bill">
+            </label>
+        </div>
+        
+        <div class="numberOfPeople" id="numberOfPeople" style="display: none;">
+            <select id="people">
+                <option value="">Number of People</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9+">9+</option>
+            </select>
+        </div>
+    
+        <div id="rate" style="display: none;">
+            <p id="rating">How Good Was The Service?</p>
+            <div class="container">
+                <div class="rating" id="rating">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5">★</label>
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4">★</label>
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3">★</label>
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2">★</label>
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1">★</label>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <button class="button" id="nextButton" onclick="increment()">Next</button>
+        </div>
+        <div>
+            <button class="button" id="submitButton" onclick="test()">Submit</button>
+        </div>
+
+
+
+        <script src="./assets/script.js"></script>
+    </body>
+</html>
